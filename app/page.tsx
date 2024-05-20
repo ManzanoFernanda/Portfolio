@@ -46,7 +46,7 @@ export default function Home() {
                   Contacto
                 </Link>
                 <Link
-                  href="/Abdulrazak-Abubakar-(Azacdev)-CV.pdf"
+                  href="CV.pdf"
                   target="_blank"
                   className="flex items-center bg-transparent text-dark dark:text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark dark:border-light dark:hover:bg-yellow dark:hover:text-dark hover:bg-yellow"
                   download={true}
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="flex items-center justify-end lg:justify-center my-10 lg:my-20">
             <Link
               href="/projects"
-              className="flex items-center bg-yellow text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-yellow hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-yellow dark:hover:text-light"
+              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-yellow hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-yellow dark:hover:text-dark"
             >
               Mas Proyectos
             </Link>

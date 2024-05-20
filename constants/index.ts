@@ -106,6 +106,15 @@ export const SOCIALS = [
   },
 ] as const;
 
+export const LANGUAGES_SKILL = [
+  {
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
+  },
+] as const;
+
 export const FRONTEND_SKILL = [
   {
     skill_name: "HTML",
@@ -220,35 +229,34 @@ export const BACKEND_SKILL = [
   },
 ] as const;
 
-export const FULLSTACK_SKILL = [
+export const DATABASE_SKILL = [
   {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Docker",
-    image: "docker.png",
-    width: 70,
-    height: 70,
-  },
-
-  {
-    skill_name: "Figma",
-    image: "figma.png",
-    width: 50,
-    height: 50,
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
   },
 ] as const;
 
-export const OTHER_SKILL = [
+export const AUTOMATION_SKILL = [
+  {
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
+  },
+] as const;
+
+export const DESIGN_TOOL_SKILL = [
+  {
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
+  },
+] as const;
+
+export const AGILE_METHODOLOGY_SKILL = [
   {
     skill_name: "Go",
     image: "go.png",

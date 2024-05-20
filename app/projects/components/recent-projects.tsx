@@ -18,7 +18,7 @@ interface FeatureProjectsProps {
 
 const RecentProjects = ({
   title,
-  type = "Recent project",
+  type = "",
   src,
   tools,
   summary,

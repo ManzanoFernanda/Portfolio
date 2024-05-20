@@ -1,88 +1,35 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import { SparklesIcon } from "@heroicons/react/24/solid";
 import { SkillDataProvider } from "@/components/sub/SkillDataProviders";
-import { createContext } from 'react';
+import { Key, createContext } from 'react';
 
 import {
-  BACKEND_SKILL,
+  LANGUAGES_SKILL,
   FRONTEND_SKILL,
-  FULLSTACK_SKILL,
-  OTHER_SKILL,
-  SKILL_DATA,
+  BACKEND_SKILL,
+  DATABASE_SKILL,
+  AUTOMATION_SKILL,
+  DESIGN_TOOL_SKILL,
+  AGILE_METHODOLOGY_SKILL,
 } from "@/constants";
 
-export const Skills = () => {
+const Skills = () => {
   return (
     <section
       id="skills"
-      style={{ transform: "scale(0.9)" }}
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+      style={{transform: "scale(0.9)"}} 
+      className="flex flex-col items-center justify-center color:yellow gap-3 h-full relative overflow-hidden py-20"
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {SKILL_DATA.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FRONTEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {BACKEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FULLSTACK_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {OTHER_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
+      <SkillSection title="Lenguajes" skills={[...LANGUAGES_SKILL]} />
+      <SkillSection title="Frontend" skills={[...FRONTEND_SKILL]} />
+      <SkillSection title="Backend" skills={[...BACKEND_SKILL]} />
+      <SkillSection title="Bases de Datos" skills={[...DATABASE_SKILL]} />
+      <SkillSection title="Desarrollo y Automatización" skills={[...AUTOMATION_SKILL]} />
+      <SkillSection title="Herramientas de Diseño" skills={[...DESIGN_TOOL_SKILL]} />
+      <SkillSection title="Metodologías Ágiles" skills={[...AGILE_METHODOLOGY_SKILL]} />
 
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
@@ -102,38 +49,59 @@ export const Skills = () => {
   );
 };
 
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/lib/motion";
-
-export const SkillText = () => {
+const SkillSection = ({ title, skills }: { title: string; skills: any[] }) => (
+  <div className="w-full text-center mb-16">
+    <h2 className="text-2xl dark:text-light text-dark my-4 font-bold">{title}</h2>
+    <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
+      {skills.map((skill: { image: string; skill_name: string; width: number; height: number; }, i: number) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: Number(i) * 0.1 }}
+        >
+          <SkillDataProvider
+            src={skill.image}
+            name={skill.skill_name}
+            width={skill.width}
+            height={skill.height} index={0}          />
+        </motion.div>
+      ))}
+    </div>
+  </div>
+);
+const SkillText = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
-        variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
       >
-        <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-        <h1 className="Welcome-text text-[13px]">
-          Think better with Next.js 14
+        <h1 className="font-bold mb-16 text-4xl sm:text-6xl lg:text-8xl lg:mb-32 w-full text-center">
+          Skills
         </h1>
       </motion.div>
 
       <motion.div
-        variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-[30px] dark:text-white text-dark font-medium mt-[10px] text-center mb-15]"
       >
-         apps with modern technologies.
+        Creating apps with modern technologies.
       </motion.div>
 
       <motion.div
-        variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="cursive text-[20px] dark:text-white text-dark mb-10 mt-[10px] text-center"
       >
         Never miss a task, deadline or idea.
       </motion.div>
     </div>
   );
 };
+
+export default Skills;

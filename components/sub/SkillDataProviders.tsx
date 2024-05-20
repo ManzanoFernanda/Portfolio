@@ -13,13 +13,7 @@ type SkillDataProviderProps = {
   index: number;
 };
 
-export const SkillDataProvider = ({
-  src,
-  name,
-  width,
-  height,
-  index,
-}: SkillDataProviderProps) => {
+export const SkillDataProvider = ({src,name,width,height,index}: SkillDataProviderProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -44,3 +38,5 @@ export const SkillDataProvider = ({
     </motion.div>
   );
 };
+
+export default SkillDataProvider;

@@ -92,6 +92,26 @@
     transform: translateY(0);
   }
 }
+@layer utilities {
+  .scroll-icon-container {
+    @apply flex justify-center w-full fixed mb-4;
+    bottom: 2rem; /* Ajusta este valor según sea necesario */
+  }
+  .scroll-icon {
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+}
 
 @keyframes profile {
   0% {

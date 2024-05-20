@@ -29,9 +29,12 @@ const Details = ({ type, place, time, info }: DetailsProps) => {
       >
         <h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">{type}&nbsp; </h3>
         <span className="capitalize font-medium text-sm md:text-base text-[#0bbf65]">
-          {time} | {place}
+          {place}
         </span>
         <p className="font-medium w-full">{info}</p>
+        <span className="capitalize font-medium text-sm md:text-base text-[#0bbf65]">
+          {time} 
+        </span>
       </motion.div>
     </li>
   );
@@ -46,7 +49,7 @@ const Education = () => {
 
   return (
     <div className="my-16 md:my-32 lg:my-64">
-      <h2 className="font-bold mb-16 text-4xl sm:text-6xl lg:text-8xl lg:mb-32 w-full text-center">Education</h2>
+      <h2 className="font-bold mb-16 text-4xl sm:text-6xl lg:text-8xl lg:mb-32 w-full text-center">Educación formal y cursos</h2>
 
       <div className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
         <motion.div
@@ -57,17 +60,45 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-center justify-between ml-4">
           <Details
-            type="Bachelor of Science Computer Engineering"
-            time="2018-2021"
-            place="Maryam Abacha American University of Niger"
-            info="Relevant courses include Data Structures and Algorithms, Computer System Engineering, Artificial Intelligence"
+            type="Software developer"
+            time="2020 - Presente"
+            place="Instituto Técnico Superior Cordoba"
+            info="Durante los años de estudio, he utilizado los lenguajes C#, Python, HTML, CSS, jQuery y Java. Actualmente estoy en mi tercer y último año."
           />
 
           <Details
             type="Masters of Computer Science"
-            time="2023-present"
-            place="Yusuf Maitama Sule University Kano"
+            time=""
+            place="Udemy"
             info="Currently pursuing a master's project in deep learning, developing a neural network architecture to enhance natural language understanding."
+          />
+
+          <Details
+            type="Docker, Kubernetes, Jenkins, AWS y Git"
+            time=""
+            place="Udemy"
+            info=""
+          />
+
+          <Details
+            type="Web & Mobile Designer: UI/UX, Figma."
+            time=""
+            place="Udemy"
+            info=""
+          />
+
+          <Details
+            type="IT essentials"
+            time=""
+            place="Cisco"
+            info="Currently pursuing a master's project in deep learning, developing a neural network architecture to enhance natural language understanding."
+          />
+
+          <Details
+            type="Traductor público de inglés"
+            time="2017-2018"
+            place="Universidad Nacional de Córdoba"
+            info=""
           />
         </ul>
       </div>

@@ -21,7 +21,7 @@ const TransitionEffect = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         {pathname.endsWith("/")
-          ? "Home"
+          ? "Inicio"
           : pathname.substring(1, 2).toUpperCase() +
             pathname.substring(2).toLowerCase()}
       </motion.div>
