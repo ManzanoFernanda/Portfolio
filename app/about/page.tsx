@@ -18,7 +18,7 @@ const AboutPage = () => {
 <TransitionEffect />
 <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-12">
   <MainLayout className="pt-16">
-    <div className="grid w-full grid-cols-8 gap-8 md:gap-16">
+    <div className="grid w-full grid-cols-8 gap-8 md:gap-x-80">
       <div className="col-span-8 sm:col-span-4 lg:col-span-3 flex flex-col items-start justify-center order-2 sm:order-none">
         <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
           Sobre mi
@@ -56,7 +56,7 @@ const AboutPage = () => {
           <Education />
         </MainLayout>
       </main>
-  
+
   <div className="scroll-icon-container fixed bottom-0 mb-4 flex justify-center w-full">
     <div className="scroll-icon animate-bounce">
       <svg
@@ -71,8 +71,8 @@ const AboutPage = () => {
     </div>
   </div>
 
-         
-     
+
+
     </>
   );
 };

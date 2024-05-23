@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   // @ts-ignore
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   title: {
-    default: "Fernanda Manzano",
+    default: "Daniela Manzano",
     template:
-      "%s - Fernanda Manzano",
+      "%s - Daniela Manzano",
   },
   description:
     "Experienced Software Developer specializing in web and mobile development. Proficient in React, React Native, and responsive design. Let's build innovative solutions together.",
