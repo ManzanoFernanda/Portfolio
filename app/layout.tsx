@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   // @ts-ignore
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   title: {
-    default: "Abdulrazak Abubakar (Azacdev) Full Stack Web & Mobile Developer",
+    default: "Fernanda Manzano",
     template:
-      "%s - Abdulrazak Abubakar (Azacdev) Full Stack Web & Mobile Developer",
+      "%s - Fernanda Manzano",
   },
   description:
     "Experienced Software Developer specializing in web and mobile development. Proficient in React, React Native, and responsive design. Let's build innovative solutions together.",
@@ -49,7 +49,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       //</html>className={cn(
         //"bg-[#030014] overflow-y-scroll overflow-x-hidden",
         //inter.className
-      //)}   
+      //)}
     >
      <Script id="theme-switcher" strategy="beforeInteractive">
         {`
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           } else {
             document.documentElement.classList.remove('dark')
           }`}
-        
+
       </Script>
       <Toaster theme="dark" />
       <Navbar />
