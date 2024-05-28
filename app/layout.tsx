@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { StarsCanvas } from "@/components/main/star-background";
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import { Toaster } from "sonner";

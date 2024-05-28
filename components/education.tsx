@@ -49,7 +49,9 @@ const Education = () => {
 
   return (
     <div className="my-16 md:my-32 lg:my-64">
-      <h2 className="font-bold mb-16 text-4xl sm:text-6xl lg:text-8xl lg:mb-32 w-full text-center">Educación formal y cursos</h2>
+      <h2 className="font-bold mb-10 text-4xl sm:text-6xl lg:text-6xl lg:mb-32 w-full text-center dark:text-yellow text-yellow">
+        Educación formal y cursos
+        </h2>
 
       <div className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
         <motion.div

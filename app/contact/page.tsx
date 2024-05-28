@@ -8,7 +8,7 @@ import ContactForm from "./components/contact-form";
 import TransitionEffect from "@/components/animation/transition";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contacto",
   description:
     "Connect with Dani, a passionate Software and Web Developer. Reach out for collaboration, inquiries, or to discuss your next digital project.",
 };
@@ -21,7 +21,7 @@ const ContactPage = () => {
         <MainLayout className="pt-16">
           <AnimatedText
             title="Conéctate conmigo"
-            className="mb-5 dark:text-yellow !text-4xl sm:!text-6xl lg:!text-7xl"
+            className="mb-16 dark:text-yellow text-yellow !text-4xl sm:!text-6xl lg:!text-6xl"
           />
           <div className="grid justify-between flex-col items-center grid-cols-1 gap-5 md:grid-cols-2">
             <div className="flex flex-col justify-center items-center mx-auto">
@@ -46,7 +46,7 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
-              <div className="bg-light flex flex-col justify-center items-center mx-auto">
+              <div className="flex flex-col justify-center items-center mx-auto">
                 <h3 className="text-[2rem] text-center font-medium mb-6 text-yellow dark:text-light">
                 ¡Hagamos algo increíble juntos!
                 </h3>

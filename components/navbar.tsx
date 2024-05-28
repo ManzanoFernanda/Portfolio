@@ -10,7 +10,6 @@ import {
   LinkedInIcon,
   MoonIcon,
   SunIcon,
-  TwitterIcon,
 } from "./icons";
 import useThemeSwitcher from "@/hooks/use-theme-switcher";
 import { Contact, Home, LucideWorkflow, Menu, User} from "lucide-react";

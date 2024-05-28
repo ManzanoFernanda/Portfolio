@@ -14,7 +14,7 @@ const BookPage = () => {
         <div style={{ transform: "scale(0.7)" }}>
           <AnimatedText
             title="Agendar una Reunión"
-            className="mb-8 mb:mb-16 dark:text-yellow !text-4xl sm:!text-6xl md:!text-7xl"
+            className="mb-16 dark:text-yellow text-yellow !text-4xl sm:!text-6xl lg:!text-6xl"
           />
         </div>
 

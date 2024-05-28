@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -83,13 +83,24 @@
   justify-self: center;
   animation: slideInUp 2s ease forwards;
 }
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
 
 @keyframes slideInUp {
   from {
-    transform: translateY(100%);
+    transform: translateY(10%);
   }
   to {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
 }
 @layer utilities {
@@ -97,8 +108,12 @@
     @apply flex justify-center w-full fixed mb-4;
     bottom: 2rem; /* Ajusta este valor según sea necesario */
   }
+  .scroll-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
   .scroll-icon {
-    animation: bounce 2s infinite;
+    animation: bounce 1s infinite;
   }
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {

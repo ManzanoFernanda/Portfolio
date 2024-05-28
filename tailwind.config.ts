@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
+import { blue, green, red } from 'tailwindcss/colors';
 
 module.exports = {
   darkMode: ["class"],
@@ -9,6 +10,11 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
+  gradientColorStops:{
+    blue: blue,
+    red: red,
+    green: green,
+  },
   prefix: "",
   theme: {
     container: {
@@ -23,12 +29,15 @@ module.exports = {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
       colors: {
+        blue: '#3b82f6',
+        red: '#ef4444',
+        green: '#10b981',
         dark: "#1b1b1b",
-        yellow: "#FFCB14",
+        yellow: "#F200A2",
         light: "#f5f5f5",
         purpleLight: "#B63E96", // 240,86,199
         purpleDark: "#58E6D9", // 80,230,217
-        border: "FFCB14",
+        border: "F200A2",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -62,12 +71,19 @@ module.exports = {
           foreground: "#00000",
         },
       },
+   
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      keyframes: {
+    
+      keyframes:
+      {
+        'slide-down': {
+          '0%': { transform: 'translateY(-20px)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -78,16 +94,17 @@ module.exports = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.5s ease-out",
+        "accordion-up": "accordion-up 0.5s ease-out",
         "spin-slow": "spin 8s linear infinite",
+        'slide-down': 'slide-down 1s ease-in',
       },
       backgroundImage: {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#00000 5px, #00000 100px)",
 
         circularDark:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#FFCB14 8px,#FFCB14 100px)",
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#F200A2 8px,#F200A2 100px)",
 
         circularLightLg:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",

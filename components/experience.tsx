@@ -16,7 +16,7 @@ const Details = ({ position, company, time, work }: DetailsProps) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col items-center justify-between"
     >
       <LiIcon reference={ref} />
 
@@ -31,7 +31,7 @@ const Details = ({ position, company, time, work }: DetailsProps) => {
           <p className="text-yellow capitalize inline-block">@{company}</p>
         </h3>
         <span className="capitalize font-medium text-sm md:text-base text-dark dark:text-light">
-          {time} |
+          {time} 
         </span>
         <p className="font-medium w-full text-sm md:text-base">{work}</p>
       </motion.div>
@@ -47,8 +47,8 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-16 md:my-32 lg:my-64">
-      <h2 className="font-bold mb-16 text-4xl sm:text-6xl lg:text-8xl lg:mb-32 w-full text-center">
+    <div className="my-8 md:my-16 lg:my-20">
+      <h2 className="font-bold mb-5 text-4xl sm:text-6xl lg:text-6xl lg:mb-20 w-full text-center dark:text-yellow text-yellow">
         Experiencia
       </h2>
 
@@ -71,7 +71,7 @@ const Experience = () => {
             position="Pasante FullStack Developer"
             company="FabricARG"
             time="julio 2022 - noviembre 2022" 
-            work={""} 
+            work="Freelancer - Tester, diseño de interfaz de usuario, creación de wireframes, metodología de diseño atómico, resolución de problemas de rendimiento, accesibilidad y experiencia de usuario."
             />
         </ul>
       </div>

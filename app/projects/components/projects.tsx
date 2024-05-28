@@ -4,10 +4,11 @@ import { GithubIcon } from "@/components/icons";
 import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from 'react';
-import profilePic from '/Users/fernandamanzano/Documents/Dev/Portfolio/portfolio-main/public/profile-pic-2.jpg';
-import TransitionEffect from "@/components/transition";
+import { useState, useEffect  } from 'react';
+import profilePic from "@/public/profile-pic-2.jpg";
 import MainLayout from "@/components/main-layout";
+import TransitionEffect from "@/components/transition";
+import { PROJECTS } from "@/constants";
 
 interface ProjectsProps {
   src: StaticImageData;
@@ -142,4 +143,3 @@ const AboutPage = () => {
 };
 
 export default Projects;
-
