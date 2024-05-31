@@ -9,6 +9,7 @@ import type { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
+import foto2 from '@/public/foto2.jpg';
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       "%s - Daniela Manzano",
   },
   description:
-    "Experienced Software Developer specializing in web and mobile development. Proficient in React, React Native, and responsive design. Let's build innovative solutions together.",
+    "Portfolio",
   keywords: [
     "web dev",
     "web developer",
