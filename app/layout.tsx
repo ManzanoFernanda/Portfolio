@@ -31,12 +31,12 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://www.azacdev.com",
+    url: "https://daniela-manzano.vercel.app/",
     locale: "en_US",
     title: "Daniela Manzano",
-    images: "./opengraph-image.webp",
+    images: "foto2.jpg",
     description:
-      "Experienced Software Developer specializing in web and mobile development. Proficient in React, React Native, and responsive design. Let's build innovative solutions together.",
+      "",
     siteName: "Daniela Manzano",
   },
 };

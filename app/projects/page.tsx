@@ -8,7 +8,7 @@ import TransitionEffect from "@/components/animation/transition";
 export const metadata: Metadata = {
   title: "Web & Mobile Projects Portfolio",
   description:
-    "Explore a collection of projects by Azacdev, a Software and Web Developer. From responsive websites to innovative mobile apps, discover my skills and passion for crafting digital solutions.",
+    "",
 };
 
 const ProjectsPage = () => {
