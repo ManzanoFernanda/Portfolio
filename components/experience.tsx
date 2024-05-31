@@ -47,7 +47,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-8 md:my-16 lg:my-20">
+    <div className="my-8 md:my-16 lg:my-5">
       <h2 className="font-bold mb-5 text-4xl sm:text-6xl lg:text-6xl lg:mb-20 w-full text-center dark:text-yellow text-yellow">
         Experiencia
       </h2>
@@ -59,19 +59,19 @@ const Experience = () => {
           className="absolute w-[2px] left-[20px] md:left-[30px] lg:left-9 top-0 lg:-w-[4px] h-full bg-yellow dark:bg-light origin-top"
         />
 
-        <ul className="w-full flex flex-col items-center justify-between ml-2 sm:ml-4">
+        <ul className="w-full my-5 flex flex-col items-center justify-between ml-2 sm:ml-4">
           <Details
-            position="Tester"
+            position="Tester / Diseñadora de interfaz de usuario"
             company="Nolock / Squadreon"
             time="junio 2022 - Octubre 2022"
-            work="Freelancer - Tester, diseño de interfaz de usuario, creación de wireframes, metodología de diseño atómico, resolución de problemas de rendimiento, accesibilidad y experiencia de usuario."
+            work="Como Diseñador de Interfaz de Usuario, realicé la creación de wireframes y aplicaciones, implementando metodologías avanzadas como el diseño atómico. Optimicé el rendimiento y la accesibilidad de los productos, priorizando la experiencia del usuario. Ocupando el puesto de tester me llevó a adentrarme en nuevas tecnologías, una experiencia que encontré apasionante, también me permitió trabajar profesionalmente con las metodologías scrum."
             />
 
           <Details
             position="Pasante FullStack Developer"
             company="FabricARG"
             time="julio 2022 - noviembre 2022" 
-            work="Freelancer - Tester, diseño de interfaz de usuario, creación de wireframes, metodología de diseño atómico, resolución de problemas de rendimiento, accesibilidad y experiencia de usuario."
+            work="Prácticas para empresa local, enfocado en el aprendizaje y la aplicación de tecnologías como C# y SQL Server. Durante mi pasantía, adquirí habilidades prácticas en el uso de estas herramientas mediante ejercicios y actividades de formación."
             />
         </ul>
       </div>

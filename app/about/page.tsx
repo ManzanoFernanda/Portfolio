@@ -4,13 +4,15 @@ import Image from "next/image";
 import { createContext, useRef } from 'react';
 import AnimatedText from "@/components/animation/animated-text";
 import MainLayout from "@/components/main-layout";
-import profilePic from "@/public/profile-pic-2.jpg";
 import Experience from "@/components/experience";
 import Education from "@/components/education";
 import TransitionEffect from "@/components/animation/transition";
 import { SkillDataProvider } from "@/components/sub/SkillDataProviders";
 import Skills from "@/components/main/skills";
-import React from "react";
+import React from "react"
+import LiIcon from "@/components/li-icon";
+import { motion } from "framer-motion";
+import foto2 from "@/public/foto2.jpg";
 
 const AboutPage = () => {
   const scrollToPixels = (pixels: number, duration: number) => {
@@ -36,42 +38,45 @@ const AboutPage = () => {
   };
 
   const handleScrollClick = () => {
-    const pixelsToScroll = 800; // Número de píxeles a desplazar
-    const duration = 1000; // Duración en milisegundos
+    const pixelsToScroll = 800;
+    const duration = 1000; 
     scrollToPixels(pixelsToScroll, duration);
   };
 
   return (
     <>
       <TransitionEffect />
-      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-12">
-        <MainLayout className="pt-16">
-          <div className="grid w-full-width-container grid-cols-10 gap-60 mt- md:gap-50 flex flex-col">
+      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-10">
+        <MainLayout className="pt-10">
+          <div className="grid w-full-width-container grid-cols-6 gap-60 mt- md:gap-50 flex flex-col">
             <div className="col-span-8 sm:col-span-4 lg:col-span-3 flex flex-col justify-center order-2 sm:order-none">
               <h2 className="mb-6 text-3xl font-bold uppercase text-yellow animate-slide-down">
                 Sobre mi
               </h2>
               <p className="font-medium flex flex-col">
-                - Hola soy Daniela Software Developer adept at creating scalable
-                systems, seamlessly integrating frontend interfaces with backend
-                services, APIs, and databases.
+              Hola, soy Daniela Manzano, estudio Desarrollo de Software y actualmente vivo en Córdoba, Argentina.
               </p>
-              <p className="font-medium my-4 flex flex-col">
-                - I&apos;m deeply committed to accessibility and inclusivity and
-                believe that technology has the power to connect and empower people.
+              <p className="font-medium my-3 flex flex-col">
+              Estoy profundamente comprometida con la accesibilidad y la inclusión, y creo que la tecnología tiene el poder de conectar y empoderar a las personas.
               </p>
-              <p className="font-medium">
-                - Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and user-centered
-                thinking to every project I work on. I look forward to the opportunity
-                to bring my skills and passion to your next project.
+              <p className="font-medium my-3 flex flex-col">
+              Ya sea que esté trabajando en un sitio web, una aplicación móvil u otro producto digital, aporto mi compromiso con la excelencia en el diseño y el enfoque centrado en el usuario a cada proyecto en el que trabajo.
+              </p>
+              <p className="font-medium my-3 flex flex-col">
+              Disfruto por igual diseñar, generar código y hacer testing, asegurándome de que cada parte del proyecto sea de la más alta calidad.
+              </p>
+              <p className="font-medium my-3 flex flex-col">
+              Estoy en búsqueda de una empresa en la que pueda ser parte de su comunidad por mucho tiempo, formar lazos, crear experiencias y aprender mucho.
+              </p>
+              <p className="font-medium my-3 flex flex-col">
+              Espero tener la oportunidad de aportar mis habilidades y pasión a su próximo proyecto.
               </p>
             </div>
 
             <div className="justify-center col-span-8 sm:col-span-4 lg:col-span-3 relative h-max rounded-2xl border-2 border-solid bg-light p-8 border-yellow dark:border-yellow dark:bg-dark order-1 sm:order-none">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem]" />
               <Image
-                src={profilePic}
+                src={foto2}
                 alt="Daniela Manzano"
                 className="w-full h-auto rounded-2xl"
                 priority={true}
@@ -82,8 +87,18 @@ const AboutPage = () => {
           <Experience />
           <Education />
         </MainLayout>
+        <div className="scroll-icon-container">
+          <motion.div
+            className="scroll-icon"
+            onClick={handleScrollClick}
+            whileHover={{ scale: 1.1 }}
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 1, repeat: Infinity }}
+          >
+            ↓
+          </motion.div>
+        </div>
       </main>
-
     </>
   );
 };

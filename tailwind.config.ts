@@ -30,13 +30,15 @@ module.exports = {
       },
       colors: {
         blue: '#3b82f6',
+        grey: '#3D3D3D',
+        greyd: '#C0C0C0',
         red: '#ef4444',
         green: '#10b981',
         dark: "#1b1b1b",
         yellow: "#F200A2",
         light: "#f5f5f5",
-        purpleLight: "#B63E96", // 240,86,199
-        purpleDark: "#58E6D9", // 80,230,217
+        purpleLight: "#EFE0FF", 
+        purpleDark: "#952AFF",
         border: "F200A2",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

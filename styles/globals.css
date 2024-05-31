@@ -105,15 +105,23 @@
 }
 @layer utilities {
   .scroll-icon-container {
-    @apply flex justify-center w-full fixed mb-4;
-    bottom: 2rem; /* Ajusta este valor según sea necesario */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 2rem;
   }
+  
   .scroll-icon:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
+  
   .scroll-icon {
     animation: bounce 1s infinite;
+    font-size: 2rem;
+    color: #FF2AB7;
+  }
   }
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -126,7 +134,6 @@
       transform: translateY(-5px);
     }
   }
-}
 
 @keyframes profile {
   0% {

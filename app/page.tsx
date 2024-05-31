@@ -2,14 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import MainLayout from "@/components/main-layout";
-import profilePic from "@/public/profile.webp";
 import AnimatedText from "@/components/animation/animated-text";
 import { LinkArrow } from "@/components/icons";
 import HireMe from "@/components/hire-me";
 import TransitionEffect from "@/components/animation/transition";
 import Socials from "@/components/socials";
-import RecentProjects from "./projects/components/recent-projects";
 import { projectsData } from "@/config/data";
+import foto1 from "@/public/foto1.jpg";
 
 export default function Home() {
   const recentProject = projectsData[0];
@@ -24,9 +23,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8">
             <div className="w-full md:hidden lg:inline-block lg:w-1/2 mt-0 mb-4">
             <Image
-              src={profilePic}
+              src={foto1}
               alt="Daniela Manzano"
-              className="w-full h-90 rounded-2xl mt-8 mb-8 border-4 border-solid border-yellow dark:border-yellow"
+              className="w-full h-auto rounded-2xl"
               priority={true}
             />
             </div>

@@ -41,10 +41,10 @@ const ContactForm = () => {
     console.log(values);
     if (formData.current) {
       emailjs.sendForm(
-        "service_6b4dv29",
-        "template_l30c3gd",
+        "service_fhecj1k",
+        "template_1cmvbia",
         formData.current,
-        "cJuH2_nxQgwnvDytr"
+        "2RQPJPO7gaSXYJygh"
       );
       toast.success("Message has been sent");
       form.reset();
@@ -65,11 +65,11 @@ const ContactForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className=" absolute top-[-0.5rem] left-5 text-sm p-1 z-30 text-dark bg-light dark:text-light dark:bg-dark">
-                  Name
+                  Nombre / Empresa
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Insert your name"
+                    placeholder="Inserte su nombre o empresa"
                     {...field}
                     className="absolute top-0 left-0 right-0 w-full h-full outline-none text-dark rounded-xl border p-6 border-yellow bg-light dark:text-light dark:bg-dark dark:border-yellow"
                   />
@@ -91,7 +91,7 @@ const ContactForm = () => {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Insert your email"
+                    placeholder="Inserte su email"
                     {...field}
                     className="absolute top-0 left-0 right-0 w-full h-full outline-none text-dark rounded-xl border p-6 bg-light border-yellow dark:text-light dark:bg-dark dark:border-yellow"
                   />
@@ -109,11 +109,11 @@ const ContactForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className=" absolute top-[-0.5rem] left-5 text-sm p-1 z-30 text-dark bg-light dark:text-light dark:bg-dark">
-                  Text
+                  Mensaje
                 </FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Write you message"
+                    placeholder="Escriba su mensaje aquí"
                     {...field}
                     className="absolute top-0 left-0 right-0 w-full h-full text-dark outline-none rounded-xl border p-6 resize-none bg-light border-yellow dark:text-light dark:bg-dark dark:border-yellow"
                   />
@@ -128,7 +128,7 @@ const ContactForm = () => {
           type="submit"
           className="flex flex-row items-center rounded-lg bg-dark text-light py-6 px-10 text-xl font-semibold border hover:border-dark hover:bg-yellow hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-yellow dark:hover:text-dark transition-all duration-300"
         >
-          Submit <Send className="ml-2 text-2xl" />
+          Enviar <Send className="ml-2 text-2xl" />
         </Button>
       </form>
     </Form>

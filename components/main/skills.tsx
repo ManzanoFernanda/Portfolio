@@ -10,6 +10,7 @@ import {
   BACKEND_SKILL,
   DATABASE_SKILL,
   AUTOMATION_SKILL,
+  SPACE_SKILL,
   DESIGN_TOOL_SKILL,
   AGILE_METHODOLOGY_SKILL,
 } from "@/constants";
@@ -28,6 +29,10 @@ const Skills = () => {
       <SkillSection title="BackEnd" skills={[...BACKEND_SKILL]} />
       <SkillSection title="Bases de Datos" skills={[...DATABASE_SKILL]} />
       <SkillSection title="Desarrollo y Automatización" skills={[...AUTOMATION_SKILL]} />
+      <div className="w-full text-center mb-2">
+        <SkillSection title=" " skills={[...SPACE_SKILL]} />
+      </div>
+      
       <SkillSection title="Herramientas de Diseño" skills={[...DESIGN_TOOL_SKILL]} />
       <SkillSection title="Metodologías Ágiles" skills={[...AGILE_METHODOLOGY_SKILL]} />
 
@@ -38,20 +43,22 @@ const Skills = () => {
 
 const SkillSection = ({ title, skills }: { title: string; skills: any[] }) => (
   <div className="w-full text-center mb-2">
-    <h2 className="text-3xl dark:text-blue text-blue my-8 font-bold">{title}</h2>
+    <h2 className="text-3xl text-dark dark:text-light my-8 font-bold">{title}</h2>
     <div className="flex justify-center flex-wrap gap-10 items-center">
       {skills.map((skill: { image: string; skill_name: string; width: number; height: number; }, i: number) => (
         <motion.div
           key={i}
-          initial={{ opacity: 0, y: 90 }}
-          animate={{ opacity: 2, y: 0 }}
-          transition={{ duration: 1, delay: Number(i) * 0.5 }}
+          initial={{ opacity: 30, x: -20 }} // Comienza desde la izquierda (valor negativo para la coordenada x)
+          animate={{ opacity: 10, x: 1 }} 
+          transition={{ duration: 3 , delay: Number(i) * 0.2, repeat: Infinity, repeatType: "reverse" }}
         >
           <SkillDataProvider
             src={skill.image}
             name={skill.skill_name}
             width={skill.width}
-            height={skill.height} index={0}          />
+            height={skill.height}
+            index={0}
+          />
         </motion.div>
       ))}
     </div>
