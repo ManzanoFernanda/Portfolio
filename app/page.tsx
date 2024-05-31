@@ -20,15 +20,15 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light lg:pt-10">
         <MainLayout className="pt-28 lg:pt-0 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8">
-            <div className="w-full md:hidden lg:inline-block lg:w-1/2 mt-0 mb-4">
-            <Image
-              src={foto1}
-              alt="Daniela Manzano"
-              className="w-full h-auto rounded-2xl"
-              priority={true}
-            />
-            </div>
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8 ">
+              <Image
+                src={foto1}
+                alt="Daniela Manzano"
+                className="rounded-2xl border-2 border-solid bg-light p-5 border-yellow dark:border-yellow"
+                width={450}
+                height={580}
+                priority={true}
+              />
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center text-center md:text-start">
               <AnimatedText
                 title="Hola soy Dani y espero seamos equipo."
