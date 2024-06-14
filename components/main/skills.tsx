@@ -48,7 +48,7 @@ const SkillSection = ({ title, skills }: { title: string; skills: any[] }) => (
       {skills.map((skill: { image: string; skill_name: string; width: number; height: number; }, i: number) => (
         <motion.div
           key={i}
-          initial={{ opacity: 30, x: -20 }} // Comienza desde la izquierda (valor negativo para la coordenada x)
+          initial={{ opacity: 30, x: -20 }} 
           animate={{ opacity: 10, x: 1 }} 
           transition={{ duration: 3 , delay: Number(i) * 0.2, repeat: Infinity, repeatType: "reverse" }}
         >

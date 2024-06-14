@@ -1,4 +1,3 @@
-// /components/GlobeIcon.tsx
 import React from 'react';
 
 const GlobeIcon = ({ className = "", ...props }) => (

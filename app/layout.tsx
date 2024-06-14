@@ -46,10 +46,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en">
     <body
       className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}
-      //</html>className={cn(
-        //"bg-[#030014] overflow-y-scroll overflow-x-hidden",
-        //inter.className
-      //)}
     >
      <Script id="theme-switcher" strategy="beforeInteractive">
         {`

@@ -24,7 +24,7 @@ export const projectsData: ProjectData[] = [
     src: [h1],
     title: "Holitrends",
     description: "E2E testing para el sistema CRM Holitrends. Utilizando Cypress.io, se aseguró el correcto funcionamiento del sistema, desde la interfaz de usuario hasta la gestión de datos mejorando la eficiencia del equipo de desarrollo y garantizando una experiencia fluida para los usuarios finales.",
-    link: "https://holitrends.com/" // Enlace para Holitrends
+    link: "https://holitrends.com/"
   },
   {
     id: 2,

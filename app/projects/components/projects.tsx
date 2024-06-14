@@ -5,9 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { FaGlobe } from 'react-icons/fa';  // Importa el icono de globo terráqueo
-
-interface FeatureProjectsProps {
+import { FaGlobe } from 'react-icons/fa';  interface FeatureProjectsProps {
   src: StaticImageData[];
   type?: string;
   link: string;

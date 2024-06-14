@@ -24,7 +24,7 @@ export default function Home() {
               <Image
                 src={foto1}
                 alt="Daniela Manzano"
-                className="rounded-2xl border-2 border-solid bg-light p-5 border-yellow dark:border-yellow"
+                className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
                 width={450}
                 height={580}
                 priority={true}

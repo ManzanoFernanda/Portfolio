@@ -1,5 +1,4 @@
-"use client"; // Indica que este componente es un componente de cliente
-
+"use client";
 import React, { useState } from "react";
 import { CircularText } from "./icons";
 

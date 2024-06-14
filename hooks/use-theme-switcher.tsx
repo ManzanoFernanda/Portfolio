@@ -16,10 +16,8 @@ const useThemeSwitcher = (): [
     const handleChange = () => {
       let check: ThemeMode;
       if (mode === null) {
-        // If mode is null, fetch from localStorage or use media query
         check = userPref === "dark" ? "dark" : "light";
       } else {
-        // Otherwise, use the current mode
         check = mode;
       }
 
