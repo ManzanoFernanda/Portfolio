@@ -63,9 +63,9 @@ const Education = () => {
         <ul className="w-full flex flex-col items-center justify-between ml-4">
           <Details
             type="Software developer"
-            time="2020 - Presente"
+            time="febrero 2020 - junio 2024"
             place="Instituto Técnico Superior Cordoba"
-            info="Durante los años de estudio, he aprendido academicamente C#, Python, Haskell, HTML, CSS, jQuery y Java. Actualmente estoy en mi tercer y último año."
+            info="Durante los años de estudio, he aprendido academicamente C#, Python, Haskell, HTML, CSS, jQuery y Java. Gracias a la tecnicatura tambien he participado de hackatones y seminarios."
           />
 
           <Details
@@ -98,7 +98,7 @@ const Education = () => {
 
           <Details
             type="Traductor público de inglés"
-            time="2017-2018"
+            time="marzo 2017 - junio 2018"
             place="Universidad Nacional de Córdoba"
             info="Un año y medio de cursado en la carrera de Traductor Público de Inglés en la Facultad de Lenguas de la UNC. Durante este tiempo, aprendí sobre traducción, interpretación, gramática y fonética del idioma inglés."
           />

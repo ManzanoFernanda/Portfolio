@@ -63,7 +63,7 @@ const Experience = () => {
           <Details
             position="Tester / Diseñadora de interfaz de usuario"
             company="Nolock / Squadreon"
-            time="junio 2022 - Octubre 2022"
+            time="junio 2022 - enero 2023"
             work="Como Diseñador de Interfaz de Usuario, realicé la creación de wireframes y aplicaciones, implementando metodologías avanzadas como el diseño atómico. Optimicé el rendimiento y la accesibilidad de los productos, priorizando la experiencia del usuario. Ocupando el puesto de tester me llevó a adentrarme en nuevas tecnologías, una experiencia que encontré apasionante, también me permitió trabajar profesionalmente con las metodologías scrum."
             />
 

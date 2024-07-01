@@ -46,7 +46,7 @@ const AboutPage = () => {
   return (
     <>
       <TransitionEffect />
-      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-10">
+      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-10 mt-20">
         <MainLayout className="pt-10">
           <div className="grid w-full-width-container grid-cols-6 gap-60 mt- md:gap-50 flex flex-col">
             <div className="col-span-8 sm:col-span-4 lg:col-span-3 flex flex-col justify-center order-2 sm:order-none">
@@ -73,12 +73,14 @@ const AboutPage = () => {
               </p>
             </div>
 
-            <div className="justify-center col-span-8 sm:col-span-4 lg:col-span-3 relative h-max rounded-2xl border-2 border-solid bg-light p-8 border-yellow dark:border-yellow dark:bg-dark order-1 sm:order-none">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem]" />
-              <Image
+            <div className="justify-center col-span-8 sm:col-span-4 lg:col-span-3 relative h-max rounded-2xl dark:bg-dark order-1 sm:order-none">
+              <div className="absolute top-0 -right-3 -z-10 w-[90%] h-[90%] rounded-[2rem]" />
+                <Image
                 src={foto2}
                 alt="Daniela Manzano"
-                className="w-full h-auto rounded-2xl"
+                className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
+                width={450}
+                height={580}
                 priority={true}
               />
             </div>
