@@ -32,7 +32,7 @@ const HireMe = () => {
               X
             </button>
             <iframe
-              src="/manzanodaniela.pdf"
+              src="/dmanzano.pdf"
               width="100%"
               height="100%"
               className="rounded-lg"
