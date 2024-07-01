@@ -66,7 +66,7 @@ const AboutPage = () => {
               Disfruto por igual diseñar, generar código y hacer testing, asegurándome de que cada parte del proyecto sea de la más alta calidad.
               </p>
               <p className="font-medium my-3 flex flex-col">
-              Estoy en búsqueda de una empresa en la que pueda ser parte de su comunidad por mucho tiempo, formar lazos, crear experiencias y aprender mucho.
+              Estoy en búsqueda de una empresa en la que pueda ser parte de su comunidad por mucho tiempo, formar lazos, crear experiencias y ganar conocimientos.
               </p>
               <p className="font-medium my-3 flex flex-col">
               Espero tener la oportunidad de aportar mis habilidades y pasión a su próximo proyecto.
