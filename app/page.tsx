@@ -31,7 +31,7 @@ export default function Home() {
               />
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center text-center md:text-start">
               <AnimatedText
-                title="Hello, I'm Dani, and I hope we can be a team."
+                title="Hello, I&apos;m Dani, and I hope we can be a team."
                 className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left dark:text-yellow text-yellow"
               />
               

@@ -54,7 +54,7 @@ const AboutPage = () => {
                 About me
               </h2>
               <p className="font-medium flex flex-col">
-              Hello, I'm Daniela Manzano, and I've been studying programming since 2020. I've always been interested in technology, which has given me knowledge in both hardware and software.
+              Hello, I&apos;m Daniela Manzano, and I&apos;ve been studying programming since 2020. I&apos;ve always been interested in technology, which has given me knowledge in both hardware and software.
               </p>
               <p className="font-medium my-3 flex flex-col">
               I am deeply committed to accessibility and inclusion, and I believe technology has the power to connect and empower people.</p>

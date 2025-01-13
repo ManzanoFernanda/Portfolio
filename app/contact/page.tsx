@@ -24,7 +24,7 @@ const ContactPage = () => {
           <div className="justify-center flex-col items-center grid-cols-1 gap-5 md:grid-cols-2">
               <div className="flex flex-col justify-center items-center mx-auto">
                 <h3 className="text-[2rem] text-center font-medium mb-6 text-yellow dark:text-light">
-                Let's create something amazing together!
+                Let&apos;s create something amazing together!
                 </h3>
                <ContactForm />
               </div>
