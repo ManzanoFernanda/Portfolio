@@ -14,7 +14,7 @@ const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://default.url"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://danimanzano.vercel.app/"),
   title: {
     default: "Daniela Manzano",
     template: "%s - Daniela Manzano",
