@@ -6,41 +6,32 @@ import Navbar from "@/components/navbar";
 import { Toaster } from "sonner";
 import Script from "next/script";
 import type { PropsWithChildren } from "react";
-import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
-import urlimage from '@/public/urlimage.png';
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // @ts-ignore
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://default.url"),
   title: {
     default: "Daniela Manzano",
-    template:
-      "%s - Daniela Manzano",
+    template: "%s - Daniela Manzano",
   },
-  description:
-    "Portfolio",
-  keywords: [
-    "web dev",
-    "web developer",
-
-  ],
+  description: "Portfolio",
+  keywords: ["web dev", "web developer"],
   openGraph: {
     type: "website",
     url: "https://danimanzano.vercel.app/",
     locale: "en_US",
     title: "Daniela Manzano",
-    images: "urlimage.jpg",
-    description:
-      "",
+    images: "/urlimage.png",
+    description: "",
     siteName: "Daniela Manzano",
   },
 };
+
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
