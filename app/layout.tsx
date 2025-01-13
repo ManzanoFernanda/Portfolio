@@ -28,10 +28,10 @@ export const metadata: Metadata = {
     title: "Daniela Manzano",
     images: [
       {
-        url: "/urlimage.png", // Ruta relativa para la imagen en la carpeta `public`
-        width: 1200, // Ancho recomendado para Open Graph
-        height: 630, // Alto recomendado para Open Graph
-        alt: "Daniela Manzano Portfolio", // Texto alternativo para la imagen
+        url: "/Users/fernandamanzano/development/Portfolio/public/urlimage.png", 
+        width: 1200,
+        height: 630,
+        alt: "Daniela Manzano Portfolio",
       },
     ],
     description: "Portfolio",
