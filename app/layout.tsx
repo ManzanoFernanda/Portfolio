@@ -8,6 +8,7 @@ import Script from "next/script";
 import type { PropsWithChildren } from "react";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
+import urlimage from "/public/urlimage.png";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
