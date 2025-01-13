@@ -70,8 +70,8 @@ const AboutPage = () => {
                 src={foto2}
                 alt="Daniela Manzano"
                 className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
-                width={350}
-                height={580}
+                width={750}
+                height={680}
                 priority={true}
               />
             </div>
