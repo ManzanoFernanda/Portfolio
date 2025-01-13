@@ -8,7 +8,6 @@ import Script from "next/script";
 import type { PropsWithChildren } from "react";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
-import urlimage from "/public/urlimage.png";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
@@ -27,8 +26,15 @@ export const metadata: Metadata = {
     url: "https://danimanzano.vercel.app/",
     locale: "en_US",
     title: "Daniela Manzano",
-    images: "/urlimage.png",
-    description: "url image",
+    images: [
+      {
+        url: "/urlimage.png", // Ruta relativa para la imagen en la carpeta `public`
+        width: 1200, // Ancho recomendado para Open Graph
+        height: 630, // Alto recomendado para Open Graph
+        alt: "Daniela Manzano Portfolio", // Texto alternativo para la imagen
+      },
+    ],
+    description: "Portfolio",
     siteName: "Daniela Manzano",
   },
 };
@@ -36,24 +42,23 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-    <body
-      className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}
-    >
-     <Script id="theme-switcher" strategy="beforeInteractive">
-        {`
-          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-          } else {
-            document.documentElement.classList.remove('dark')
-          }`}
-
-      </Script>
-      <Toaster theme="dark" />
-      <Navbar />
-      {children}
-      <Footer />
-      <SpeedInsights />
-    </body>
+      <body
+        className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}
+      >
+        <Script id="theme-switcher" strategy="beforeInteractive">
+          {`
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+              document.documentElement.classList.add('dark')
+            } else {
+              document.documentElement.classList.remove('dark')
+            }`}
+        </Script>
+        <Toaster theme="dark" />
+        <Navbar />
+        {children}
+        <Footer />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
