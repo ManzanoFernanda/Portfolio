@@ -9,7 +9,7 @@ import type { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
-import foto2 from '@/public/urlimage.png';
+import urlimage from '@/public/urlimage.png';
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
