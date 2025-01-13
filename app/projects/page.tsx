@@ -18,7 +18,7 @@ const ProjectsPage = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light lg:pt-12">
         <MainLayout className="pt-16">
           <AnimatedText
-            title="Projets"
+            title="Projects"
             className="mb-8 dark:text-light text-dark !text-4xl sm:!text-6xl lg:!text-6xl"
           />
 
