@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://daniela-manzano.vercel.app/",
+    url: "https://danimanzano.vercel.app/",
     locale: "en_US",
     title: "Daniela Manzano",
     images: "urlimage.jpg",
