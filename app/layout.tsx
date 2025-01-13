@@ -42,6 +42,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://danimanzano.vercel.app/" />
+        <meta property="og:title" content="Daniela Manzano" />
+        <meta property="og:description" content="Portfolio" />
+        <meta property="og:image" content="https://danimanzano.vercel.app/urlimage.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Daniela Manzano Portfolio" />
+      </head>
       <body
         className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}
       >
@@ -62,3 +72,4 @@ export default function RootLayout({ children }: PropsWithChildren) {
     </html>
   );
 }
+
