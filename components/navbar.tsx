@@ -50,10 +50,10 @@ const Navbar = () => {
           <h1 className="text-xl md:text-2xl font-bold">Daniela Manzano</h1>
         </Link>
         <div>
-          <CustomLink href="/" title="Inicio" className="mr-2" />
-          <CustomLink href="/about" title="Info" className="mx-2" />
-          <CustomLink href="/projects" title="Proyectos" className="mx-2" />
-          <CustomLink href="/contact" title="Contacto" className="ml-2" />
+          <CustomLink href="/" title="Home" className="mr-2" />
+          <CustomLink href="/about" title="Experience" className="mx-2" />
+          <CustomLink href="/projects" title="Projets" className="mx-2" />
+          <CustomLink href="/contact" title="Contact" className="ml-2" />
         </div>
 
         <div className="items-center justify-center flex-wrap flex">
@@ -123,7 +123,7 @@ const Navbar = () => {
                 onClick={() => showMenu(false)}
               >
                 <Home />
-                Inicio
+                Home
                 <span
                   className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
                     pathname.endsWith("/") ? "w-full" : "w-0"
@@ -168,7 +168,7 @@ const Navbar = () => {
                 onClick={() => showMenu(false)}
               >
                 <Contact />
-                Contacto
+                Contact
                 <span
                   className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
                     pathname.endsWith("/contact") ? "w-full" : "w-0"

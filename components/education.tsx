@@ -48,12 +48,12 @@ const Education = () => {
   });
 
   return (
-    <div className="my-16 md:my-30 lg:my-40">
-      <h2 className="font-bold mb-10 text-4xl sm:text-6xl lg:text-6xl lg:mb-32 w-full text-center dark:text-yellow text-yellow">
-        Educación formal y cursos
+    <div className="my-10 md:my-20 lg:my-40">
+      <h2 className="mb-10 text-3xl sm:text-3xl lg:text-6xl lg:mb-32 w-full text-center dark:text-yellow text-yellow">
+        Formal education and courses
         </h2>
 
-      <div className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
+      <div className="w-full md:w-[50%] lg:w-[95%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
@@ -62,45 +62,59 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-center justify-between ml-4">
           <Details
-            type="Software developer"
-            time="febrero 2020 - junio 2024"
-            place="Instituto Técnico Superior Cordoba"
-            info="Durante los años de estudio, he aprendido academicamente C#, Python, Haskell, HTML, CSS, jQuery y Java. Gracias a la tecnicatura tambien he participado de hackatones y seminarios."
+            type="Software Development"
+            time="2020 - 2024"
+            place="Córdoba Higher Technical Institute"
+            info="Principles of logic and programming, computer architecture, operating systems, applied mathematics, system modeling, advanced programming, and databases. Learned C#, Python, Haskell, HTML, CSS, jQuery, and Java. Participation in hackathons and seminars."
           />
 
           <Details
-            type="Master React y Redux. React Router, TailwindCSS, Context y Hooks"
-            time=""
+            type="Docker, Kubernetes, Jenkins, AWS, Git"
+            time="2024"
             place="Udemy"
-            info="Fundamentos de React, JSX, state y props. Construcción de componentes reutilizables. Utilización de Redux Toolkik. Gestión de estado global con Context API, y estilización de componentes con TailwindCSS.."
+            info="Fundamentals of DevOps, using essential tools such as Kubernetes, Docker, Jenkins, AWS, Git&Github, and Ansible, with a focus on cluster implementation, container management, pipeline automation, and cloud management."
           />
 
           <Details
-            type="Docker, Kubernetes, Jenkins, AWS y Git"
-            time=""
+            type="Programming"
+            time="2023"
+            place="Polytechnic Institute"
+            info="Course with a duration of 364 hours with certificate issued by the Ministry of Education of the Province of Cordoba."
+          />
+
+          <Details
+            type="React y Redux, React Router, TailwindCSS, Context and Hooks."
+            time="2022"
             place="Udemy"
-            info="Navegación en entornos Docker, despliegue de servicios utilizando Kubernetes y automatización de procesos mediante Jenkins. Gestión de infraestructuras en la nube con AWS, orquestación de configuraciones con Ansible y manejo de versiones de código con Git."
+            info="Creation of dynamic web applications using React, TypeScript, Redux, and TailwindCSS, mastering client-side navigation, form handling, state management, API requests, and performance optimization."
           />
 
           <Details
-            type="Web & Mobile Designer: UI/UX, Figma."
-            time=""
+            type="Web and mobile design with Figma"
+            time="2021"
             place="Udemy"
-            info="Figma para el diseño web y móvil, fundamentos del sketching, proceso de boceto y creación de flujos de usuario. Creación de wireframes, prototipos y sitemaps, utilizando recursos comunitarios y plugins de Figma. Teoría del diseño, accesibilidad y el uso de grids, tipografía, colores e iconografía."
+            info="Skills in planning, strategy, and creation of digital and analog products, with a focus on UX Research, usability testing, and user flow design. Prototyping in low, medium, and high fidelity, applying design and navigation patterns."
           />
 
           <Details
-            type="IT essentials"
-            time=""
+            type="Blazor - .NET Core 3.1 and WebAssembly"
+            time="2020"
+            place="Udemy"
+            info="Development of interactive web applications with C#, using Blazor WebAssembly and Blazor Server, focusing on creating reusable components, handling events, and working with RESTful APIs."
+          />
+
+          <Details
+            type="IT Essentials"
+            time="2017"
             place="Cisco"
-            info="Introducción integral al campo de las tecnologías de la información, cubriendo hardware, software, redes y seguridad. Montaje y configuración de PC, instalación y gestión de sistemas operativos y aplicaciones. Resolución de problemas técnicos de hardware y software. Configuración de redes básicas, medidas de seguridad informática, y soporte técnico."
+            info="Fundamentals of networking and information technology, including installation, configuration, maintenance, and troubleshooting of computers and networks, hardware, software, and security."
           />
 
           <Details
-            type="Traductor público de inglés"
-            time="marzo 2017 - junio 2018"
-            place="Universidad Nacional de Córdoba"
-            info="Un año y medio de cursado en la carrera de Traductor Público de Inglés en la Facultad de Lenguas de la UNC. Durante este tiempo, aprendí sobre traducción, interpretación, gramática y fonética del idioma inglés."
+            type="English Translator"
+            time="2017 - 2018"
+            place="Córdoba National University"
+            info="Focus on advanced language proficiency, including grammar, syntax, phonology, and vocabulary expansion."
           />
         </ul>
       </div>

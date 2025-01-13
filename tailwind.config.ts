@@ -35,11 +35,11 @@ module.exports = {
         red: '#ef4444',
         green: '#10b981',
         dark: "#1b1b1b",
-        yellow: "#F200A2",
+        yellow: "#3B5998",
         light: "#f5f5f5",
         purpleLight: "#EFE0FF", 
         purpleDark: "#952AFF",
-        border: "F200A2",
+        border: "#3B5998",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -106,7 +106,7 @@ module.exports = {
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#00000 5px, #00000 100px)",
 
         circularDark:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#F200A2 8px,#F200A2 100px)",
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#3B5998 8px,#3B5998 100px)",
 
         circularLightLg:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",

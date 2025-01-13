@@ -7,7 +7,7 @@ const TransitionEffect = () => {
   const pathname = usePathname();
   return (
     <motion.div
-      className="fixed top-0 bottom-0 right-full w-screen h-screen z-40 bg-[#F200A2] rounded-tr-3xl rounded-br-3xl"
+      className="fixed top-0 bottom-0 right-full w-screen h-screen z-40 bg-[#3B5998] rounded-tr-3xl rounded-br-3xl"
       initial={{ x: "100%", width: "100%" }}
       animate={{ x: "0%", width: "0%" }}
       exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
@@ -21,7 +21,7 @@ const TransitionEffect = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         {pathname.endsWith("/")
-          ? "Inicio"
+          ? "Home"
           : pathname.substring(1, 2).toUpperCase() +
             pathname.substring(2).toLowerCase()}
       </motion.div>

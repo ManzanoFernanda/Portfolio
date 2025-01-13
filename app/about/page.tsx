@@ -12,7 +12,7 @@ import Skills from "@/components/main/skills";
 import React from "react"
 import LiIcon from "@/components/li-icon";
 import { motion } from "framer-motion";
-import foto2 from "@/public/foto2.jpg";
+import foto2 from "@/public/foto2.jpeg";
 
 const AboutPage = () => {
   const scrollToPixels = (pixels: number, duration: number) => {
@@ -46,40 +46,31 @@ const AboutPage = () => {
   return (
     <>
       <TransitionEffect />
-      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-10 mt-20">
+      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-5 mt-10">
         <MainLayout className="pt-10">
-          <div className="grid w-full-width-container grid-cols-6 gap-60 mt- md:gap-50 flex flex-col">
-            <div className="col-span-8 sm:col-span-4 lg:col-span-3 flex flex-col justify-center order-2 sm:order-none">
-              <h2 className="mb-6 text-3xl font-bold uppercase text-yellow animate-slide-down">
-                Sobre mi
+          <div className="grid w-full-width-container grid-cols-8 gap-40 mt- md:gap-20 flex flex-col">
+            <div className="col-span-3 sm:col-span-2 lg:col-span-4 flex flex-col justify-center order-2 sm:order-none">
+              <h2 className="mb-6 text-2xl uppercase text-yellow animate-slide-down">
+                About me
               </h2>
               <p className="font-medium flex flex-col">
-              Hola, soy Daniela Manzano, estudio Desarrollo de Software y actualmente vivo en Córdoba, Argentina.
+              Hello, I'm Daniela Manzano, and I've been studying programming since 2020. I've always been interested in technology, which has given me knowledge in both hardware and software.
               </p>
               <p className="font-medium my-3 flex flex-col">
-              Estoy profundamente comprometida con la accesibilidad y la inclusión, y creo que la tecnología tiene el poder de conectar y empoderar a las personas.
-              </p>
+              I am deeply committed to accessibility and inclusion, and I believe technology has the power to connect and empower people.</p>
               <p className="font-medium my-3 flex flex-col">
-              Ya sea que esté trabajando en un sitio web, una aplicación móvil u otro producto digital, aporto mi compromiso con la excelencia en el diseño y el enfoque centrado en el usuario a cada proyecto en el que trabajo.
-              </p>
+              Whether working on a website, a mobile app, or another digital product, I bring my dedication to design excellence and a user-centered approach to every project I take on.</p>
               <p className="font-medium my-3 flex flex-col">
-              Disfruto por igual diseñar, generar código y hacer testing, asegurándome de que cada parte del proyecto sea de la más alta calidad.
-              </p>
-              <p className="font-medium my-3 flex flex-col">
-              Estoy en búsqueda de una empresa en la que pueda ser parte de su comunidad por mucho tiempo, formar lazos, crear experiencias y ganar conocimientos.
-              </p>
-              <p className="font-medium my-3 flex flex-col">
-              Espero tener la oportunidad de aportar mis habilidades y pasión a su próximo proyecto.
-              </p>
+              I equally enjoy designing and coding. I am looking for a company where I can be part of its community, build relationships, create experiences, and gain knowledge.</p>
             </div>
 
-            <div className="justify-center col-span-8 sm:col-span-4 lg:col-span-3 relative h-max rounded-2xl dark:bg-dark order-1 sm:order-none">
+            <div className="justify-center col-span-4 sm:col-span-2 lg:col-span-3 relative h-max rounded-2xl dark:bg-dark order-1 sm:order-none">
               <div className="absolute top-0 -right-3 -z-10 w-[90%] h-[90%] rounded-[2rem]" />
                 <Image
                 src={foto2}
                 alt="Daniela Manzano"
                 className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
-                width={450}
+                width={350}
                 height={580}
                 priority={true}
               />

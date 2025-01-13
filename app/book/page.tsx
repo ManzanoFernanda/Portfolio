@@ -13,7 +13,7 @@ const BookPage = () => {
         <MainLayout className="py-16">
         <div style={{ transform: "scale(0.7)" }}>
           <AnimatedText
-            title="Agendar una Reunión"
+            title="Book a Meeting"
             className="mb-16 dark:text-yellow text-yellow !text-4xl sm:!text-6xl lg:!text-6xl"
           />
         </div>

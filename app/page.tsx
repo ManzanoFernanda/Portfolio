@@ -31,7 +31,7 @@ export default function Home() {
               />
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center text-center md:text-start">
               <AnimatedText
-                title="Hola soy Dani y espero seamos equipo."
+                title="Hello, I'm Dani, and I hope we can be a team."
                 className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left dark:text-yellow text-yellow"
               />
               
@@ -41,7 +41,7 @@ export default function Home() {
                   href="/book"
                   className="flex items-center bg-transparent text-dark dark:text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark dark:border-light dark:hover:bg-yellow dark:hover:text-dark hover:bg-yellow"
                 >
-                  Contacto
+                  Contact
                 </Link>
                 <a
                   href="/ManzanoFernanda.pdf"
@@ -49,7 +49,7 @@ export default function Home() {
                   className="flex items-center bg-transparent text-dark dark:text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark dark:border-light dark:hover:bg-yellow dark:hover:text-dark hover:bg-yellow"
                   download={true}
                 >
-                  Curriculum
+                  Resume
                   <LinkArrow className={"w-6 ml-1"} />
                 </a>
               </div>
