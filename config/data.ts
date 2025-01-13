@@ -8,7 +8,7 @@ import hs from "@/public/hs.png";
 import hc from "@/public/hc.png";
 import hc2 from "@/public/hc2.png";
 import hc3 from "@/public/hc3.png";
-import celebria from "@/public/Celebria.jpeg";
+import celebria from "@/public/celebria.jpeg";
 
 
 interface ProjectData {
