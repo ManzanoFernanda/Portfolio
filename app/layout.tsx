@@ -9,7 +9,7 @@ import type { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
-import foto2 from '@/public/foto2.jpg';
+import foto2 from '@/public/urlimage.png';
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://daniela-manzano.vercel.app/",
     locale: "en_US",
     title: "Daniela Manzano",
-    images: "foto2.jpg",
+    images: "urlimage.jpg",
     description:
       "",
     siteName: "Daniela Manzano",
