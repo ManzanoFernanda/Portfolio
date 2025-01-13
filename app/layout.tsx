@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     title: "Daniela Manzano",
     images: "/urlimage.png",
-    description: "",
+    description: "url image",
     siteName: "Daniela Manzano",
   },
 };
