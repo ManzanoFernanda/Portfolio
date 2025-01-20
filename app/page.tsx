@@ -20,21 +20,23 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light lg:pt-10">
         <MainLayout className="pt-28 lg:pt-0 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8 ">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8">
+            <div className="relative w-96 sm:w-128 md:w-128 lg:w-128">
               <Image
                 src={foto1}
                 alt="Daniela Manzano"
                 className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
-                width={450}
-                height={580}
+                layout="responsive"
+                width={600}
+                height={800}
                 priority={true}
               />
+            </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center text-center md:text-start">
               <AnimatedText
                 title="Hello, I&apos;m Dani, and I hope we can be a team."
                 className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left dark:text-yellow text-yellow"
               />
-              
               <Socials />
               <div className="flex items-center lg:self-start mt-4 pb-8 gap-4">
                 <Link
@@ -66,3 +68,4 @@ export default function Home() {
     </>
   );
 }
+
