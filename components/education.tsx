@@ -75,11 +75,11 @@ const Education = () => {
             info="Fundamentals of DevOps, using essential tools such as Kubernetes, Docker, Jenkins, AWS, Git&Github, and Ansible, with a focus on cluster implementation, container management, pipeline automation, and cloud management."
           />
 
-          <Details
+           <Details
             type="Programming"
             time="2023"
-            place="Polytechnic Institute"
-            info="Course with a duration of 364 hours with certificate issued by the Ministry of Education of the Province of Cordoba."
+            place="Polytechnic Institute of Córdoba"
+            info="Course with a duration of 364 hours with certificate issued by the Ministry of Education of the Province of Cordoba. The course mainly focused on using machine learning and developing it with Python and JavaScript."
           />
 
           <Details
@@ -114,8 +114,10 @@ const Education = () => {
             type="English Translator"
             time="2017 - 2018"
             place="Córdoba National University"
-            info="Focus on advanced language proficiency, including grammar, syntax, phonology, and vocabulary expansion."
+            info="Focus on advanced language proficiency, including grammar, phonology, and vocabulary expansion. Refining syntax for natural and effective communication. 
+            My current English level is B2."
           />
+
         </ul>
       </div>
     </div>

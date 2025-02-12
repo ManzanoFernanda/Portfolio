@@ -64,21 +64,21 @@ const Experience = () => {
             position="Front-end Developer - UI/UX"
             company="No Country"
             time="july 2024 - Present"
-            work="Community of programmers with passion for programming beyond remuneration. Currently collaborating with a team remotely on the design and frontend development of a web platform for event management. The platform includes a calendar system, email and mobile notifications, and a database for uploading photos. It is constantly evolving and being maintained by the team. My responsibilities included designing and developing user interfaces using React.js, Tailwind CSS and JavaScript, implementing reusable components, optimizing application performance and integrating RESTful APIs. In addition, we participated in code reviews where constructive feedback is applied. The project was deployed using Vercel, ensuring mobile adaptation through responsive web and smooth user experiences. "
+            work="Currently collaborating in the design and front-end development of a webapp platform for event management “Celebria”, that includes a calendar system, email and mobile notifications, and a photo upload database. My responsibilities include designing and developing user interfaces using Figma, React.js, Tailwind CSS and JavaScript, implementing reusable components, optimizing application performance and integrating RESTful APIs. I participate in monthly code reviews where constructive feedback is applied. The project was deployed using Vercel, ensuring mobile adaptation through responsive web."
             />
 
           <Details
             position="Front-end Developer - UI/UX - Tester"
             company="Nolock"
             time="june 2022 - january 2024" 
-            work="Nolock is a company of freelance programmers where I had the opportunity to be part of various projects and learn new technologies. Working remotely, I participated in both individual and group projects. I created wireframes and applications using atomic design principles with Figma, prioritizing user experience, performance, and accessibility. I worked as a tester using Cypress.io for automated testing, ensuring high-quality standards. Additionally, I participated in code reviews, provided constructive feedback, and applied design patterns in frontend programming."
+            work="Like freelancer I had the opportunity to be part of several challenging projects and learn new programming technologies and software production processes. I worked using React.js, Tailwind CSS, Next.js, Figma, C# .NET, Blazor, HTML5, CSS3, JavaScript and Cypress.io."
             />
           
           <Details
             position="Full-Stack Developer"
             company="FabricArg"
-            time="february 2022 - jane 2022" 
-            work="Internship focused on learning and applying C# and SQL Server technologies. Developed backend and frontend functionalities. Demonstrated strong problem-solving and analytical skills. Architected the implementation of frontend solutions and drove the adoption of best practices in coding standards and performance optimization."
+            time="february 2022 - june 2022" 
+            work="University internship focused on learning and applying C# and SQL Server. Development of backend and frontend functionalities with focus on short and long term analysis and troubleshooting using coding standards and performance optimization."
             />
         </ul>
       </div>

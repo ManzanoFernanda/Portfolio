@@ -46,7 +46,7 @@ export default function Home() {
                   Contact
                 </Link>
                 <a
-                  href="/ManzanoFernanda.pdf"
+                  href="/DanielaManzano.pdf"
                   target="_blank"
                   className="flex items-center bg-transparent text-dark dark:text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark dark:border-light dark:hover:bg-yellow dark:hover:text-dark hover:bg-yellow"
                   download={true}
