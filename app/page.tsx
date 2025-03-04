@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen lg:pt-10">
+      <main className="flex items-center text-lfont w-full min-h-screen lg:pt-10 bg-cblue"> {/* Aquí aplicamos bg-cblue */}
         <MainLayout className="pt-2 lg:pt-0 relative overflow-hidden">
           <div className="flex flex-col md:flex-row items-center w-full gap-8">
             <div className="relative w-1000 sm:w-1000 md:w-1000 lg:w-128">
@@ -34,20 +34,20 @@ export default function Home() {
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center text-center md:text-start">
               <AnimatedText
                 title="Hello, I&apos;m Dani, and I hope we can be a team."
-                className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left text-yellow"
+                className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left text-lfont"
               />
               <Socials />
               <div className="flex items-center lg:self-start mt-4 pb-8 gap-4">
                 <Link
                   href="/book"
-                  className="flex items-center bg-transparent text-dark p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark hover:bg-yellow"
+                  className="flex items-center bg-transparent text-lfont p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-lfont hover:border-lfont hover:bg-yellow"
                 >
                   Contact
                 </Link>
                 <a
                   href="/DanielaManzano.pdf"
                   target="_blank"
-                  className="flex items-center bg-transparent text-dark p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark hover:bg-yellow"
+                  className="flex items-center bg-transparent text-lfont p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-lfont hover:border-lfont hover:bg-yellow"
                   download={true}
                 >
                   Resume
@@ -67,4 +67,3 @@ export default function Home() {
     </>
   );
 }
-

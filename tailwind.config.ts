@@ -3,7 +3,6 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import { blue, green, red } from 'tailwindcss/colors';
 
 module.exports = {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -29,6 +28,8 @@ module.exports = {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
       colors: {
+        lfont: "#F4F5F9",
+        cblue: '#132C54',
         blue: '#3b82f6',
         grey: '#3D3D3D',
         greyd: '#C0C0C0',

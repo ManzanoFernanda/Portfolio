@@ -20,9 +20,9 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
   return (
     <Link
       href={href}
-      className={`${className} relative group hover:bg-yellow px-3 py-2 hover:text-dark dark:hover:bg-yellow dark:hover:text-dark rounded-md transition-colors duration-200 ${
+      className={`${className} relative group hover:bg-yellow px-3 py-2 hover:text-lfont rounded-md transition-colors duration-200 ${
         pathname.endsWith(href)
-          ? "bg-dark text-white dark:text-dark dark:bg-light"
+          ? "bg-yellow text-lfont"
           : ""
       }`}
       aria-label={title}
@@ -40,9 +40,9 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Nav */}
-      <nav className="w-full fixed top-0 justify-between items-center hidden md:flex p-6 md:p-8 md-px-12 lg:px-32 md:py-4 font-medium bg-light dark:bg-dark border-b border-dark dark:border-light dark:text-light rounded-bl-md rounded-br-md z-10">
+      <nav className="bg-cblue text-lfont w-full fixed top-0 justify-between items-center hidden md:flex p-6 md:p-8 md-px-12 lg:px-32 md:py-4 font-medium z-10">
         <Link href="/">
-          <h1 className="text-xl md:text-2xl font-bold">Daniela Manzano</h1>
+          <h1 className="text-xl md:text-2xl text-lfont">Daniela Manzano</h1>
         </Link>
         <div>
           <CustomLink href="/" title="Home" className="mr-2" />
@@ -77,9 +77,9 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "bottom-0" : "bottom-[-600%]"
-          } fixed left-0 right-0 w-full pt-8 px-6 pb-16 rounded-tl-3xl rounded-tr-3xl z-[60] bg-light dark:bg-dark border-t border-dark dark:border-light transition-all duration-300`}
+          } fixed left-0 right-0 w-full pt-8 px-6 pb-16 rounded-tl-3xl rounded-tr-3xl z-[60] bg-light border-t border-dark transition-all duration-300`}
         >
-          <div className="grid grid-cols-3 gap-8 text-sm text-dark dark:text-light">
+          <div className="grid grid-cols-3 gap-8 text-sm text-lfont">
             <Link
               href="/"
               className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
