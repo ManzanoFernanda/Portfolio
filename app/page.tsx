@@ -19,13 +19,12 @@ export default function Home() {
     <>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light lg:pt-10">
-        <MainLayout className="pt-28 lg:pt-0 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8">
-            <div className="relative w-96 sm:w-128 md:w-128 lg:w-128">
+        <MainLayout className="pt-2 lg:pt-0 relative overflow-hidden">
+          <div className="flex flex-col md:flex-row items-center w-full gap-8">
+            <div className="relative w-1000 sm:w-1000 md:w-1000 lg:w-128">
               <Image
                 src={foto1}
                 alt="Daniela Manzano"
-                className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
                 layout="responsive"
                 width={600}
                 height={800}
