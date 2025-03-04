@@ -18,16 +18,15 @@ export default function Home() {
   return (
     <>
       <TransitionEffect />
-      <main className="flex items-center text-lfont w-full min-h-screen lg:pt-10 bg-cblue"> {/* Aquí aplicamos bg-cblue */}
+      <main className="flex text-lfont w-full h-screen bg-cblue">
         <MainLayout className="pt-2 lg:pt-0 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row items-center w-full gap-8">
-            <div className="relative w-1000 sm:w-1000 md:w-1000 lg:w-128">
+          <div className="flex flex-col md:flex-row w-full gap-20">
+            <div className="relative w-1000 sm:w-1000 md:w-1000 lg:w-500">
               <Image
                 src={foto1}
                 alt="Daniela Manzano"
-                layout="responsive"
-                width={600}
-                height={800}
+                width={900}
+                height={600}
                 priority={true}
               />
             </div>

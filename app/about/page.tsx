@@ -46,7 +46,7 @@ const AboutPage = () => {
   return (
     <>
       <TransitionEffect />
-      <main className="flex flex-col w-full items-center justify-center min-h-screen dark:text-light lg:pt-5 mt-10">
+      <main className="flex flex-col w-full items-center justify-center min-h-screen lg:pt-5 mt-10">
         <MainLayout className="pt-10">
           <div className="grid w-full-width-container grid-cols-8 gap-40 mt- md:gap-20 flex flex-col">
             <div className="col-span-3 sm:col-span-2 lg:col-span-4 flex flex-col justify-center order-2 sm:order-none">
@@ -64,14 +64,13 @@ const AboutPage = () => {
               I equally enjoy designing and coding. I am looking for a company where I can be part of its community, build relationships, create experiences, and gain knowledge.</p>
             </div>
 
-            <div className="justify-center col-span-4 sm:col-span-2 lg:col-span-3 relative h-max rounded-2xl dark:bg-dark order-1 sm:order-none">
-              <div className="absolute top-0 -right-3 -z-10 w-[90%] h-[90%] rounded-[2rem]" />
+            <div className="justify-center col-span-4 sm:col-span-2 lg:col-span-3 relative h-max rounded-2xl order-1 sm:order-none">
+              <div className="bg-cblue absolute top-0 -right-3 -z-10 w-[90%] h-[90%] rounded-[2rem]" />
                 <Image
                 src={foto2}
                 alt="Daniela Manzano"
-                className="rounded-2xl border-2 border-solid p-5 border-yellow dark:border-yellow"
-                width={750}
-                height={680}
+                width={600}
+                height={500}
                 priority={true}
               />
             </div>
