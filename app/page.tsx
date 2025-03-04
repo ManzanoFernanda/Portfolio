@@ -25,8 +25,8 @@ export default function Home() {
               <Image
                 src={foto1}
                 alt="Daniela Manzano"
-                width={900}
-                height={600}
+                width={850}
+                height={700}
                 priority={true}
               />
             </div>
